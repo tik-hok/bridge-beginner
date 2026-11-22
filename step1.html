@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>認識桌子和牌｜橋牌入門小教室</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body data-step="1">
+<header class="top"><div class="top-inner"><a href="index.html">♠♥ 橋牌入門小教室</a><span class="count"></span></div></header>
+<div class="bar"><span style="width:0"></span></div>
+<main>
+<h1>第 1 步：認識桌子和牌</h1>
+<div class="card-box goal"><b>這一步的目標：</b>知道誰是隊友、牌怎麼比大小。</div>
+<p class="lead">先記住一句話：<b>橋牌就是 4 個人比「誰能贏最多輪」，而且是兩人一隊合作。</b></p>
+
+<h2>👥 4 個人，2 隊</h2>
+<p>坐<b>對面</b>的人是隊友，就像羽球雙打。我們用方位來稱呼：<b>南北</b>一隊、<b>東西</b>一隊。</p>
+<div class="felt">
+  <div class="seat n">北<br>（南的隊友）</div><div class="seat w">西</div>
+  <div class="center">牌桌</div><div class="seat e">東</div><div class="seat s">南<br>（你）</div>
+</div>
+
+<h2>🃏 52 張牌，每人 13 張</h2>
+<p>用一般撲克牌，<b>不用鬼牌</b>。牌的大小從大到小：</p>
+<p><span class="pc black">♠A</span><span class="pc black">♠K</span><span class="pc black">♠Q</span><span class="pc black">♠J</span><span class="pc black">♠10</span> … <span class="pc black">♠2</span></p>
+<div class="card-box tip">A 最大、2 最小。注意：在橋牌裡 <b>A 比 K 大</b>，不是 1 點喔！</div>
+
+<div class="quiz card-box" data-answer="n" data-explain="北坐在你對面，所以是你的隊友。">
+  <h3>你坐在南邊，誰是你的隊友？</h3>
+  <div class="options">
+    <button data-v="e" data-hint="東坐在你旁邊，是對手。">東</button>
+    <button data-v="n">北</button>
+    <button data-v="w" data-hint="西坐在你旁邊，是對手。">西</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<div class="quiz card-box" data-answer="a" data-explain="A 是最大的牌。">
+  <h3>同一個花色裡，哪張牌最大？</h3>
+  <div class="options">
+    <button data-v="k" data-hint="K 很大，但還有比它更大的。">K</button>
+    <button data-v="a">A</button>
+    <button data-v="2" data-hint="2 是最小的喔！">2</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<nav class="stepnav"></nav>
+</main>
+<footer>橋牌入門小教室・給第一次接觸橋牌的你</footer>
+</body>
+</html>

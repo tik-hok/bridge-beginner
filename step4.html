@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>叫牌：喊價決定合約｜橋牌入門小教室</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body data-step="4">
+<header class="top"><div class="top-inner"><a href="index.html">♠♥ 橋牌入門小教室</a><span class="count"></span></div></header>
+<div class="bar"><span style="width:0"></span></div>
+<main>
+<h1>第 4 步：叫牌，喊價決定合約</h1>
+<div class="card-box goal"><b>這一步的目標：</b>看懂「2♥」「3NT」這種叫品的意思。先了解概念就好，不用背。</div>
+<p class="lead">打牌之前，大家要先「喊價」，決定<b>誰當王牌</b>，以及<b>要贏幾墩</b>。</p>
+
+<h2>🗣️ 叫品 = 數字 + 花色</h2>
+<p>例如「<b>2<span class="red">♥</span></b>」的意思是：「紅心當王牌，我們會贏 <b>6 + 2 = 8 墩</b>」。</p>
+<ul>
+  <li>數字是 1～7，要贏的墩數永遠是「<b>6 + 數字</b>」。</li>
+  <li>花色可以選 ♣ ♦ ♥ ♠，或是 <b>NT（無王，沒有王牌）</b>。</li>
+</ul>
+
+<div class="card-box" id="bidcalc">
+  <b>🔢 叫品換算器：</b>選選看，看看要贏幾墩。<br>
+  <select id="lv" aria-label="數字"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select>
+  <select id="st" aria-label="花色"><option>♣</option><option>♦</option><option selected>♥</option><option>♠</option><option value="NT">NT</option></select>
+  <div class="result-big"></div>
+</div>
+
+<h2>📈 像拍賣一樣，越喊越高</h2>
+<p><b>後面喊的人要喊得比前面高</b>：數字比較大，或數字一樣但花色等級比較高。</p>
+<p>花色等級（由低到高）：<b>♣ &lt; <span class="red">♦</span> &lt; <span class="red">♥</span> &lt; ♠ &lt; NT</b></p>
+<p>不想喊的時候，可以說「<b>Pass（不叫）</b>」。有人叫牌後，<b>連續 3 個人 Pass</b> 就結束，最後的叫品就是<b>合約</b>。</p>
+<div class="card-box tip">得到合約的隊伍要努力贏到承諾的墩數；另一隊則要想辦法<b>阻止</b>他們。</div>
+
+<div class="quiz card-box" data-answer="10" data-explain="6 + 4 = 10 墩。">
+  <h3>合約是「4♠」，需要贏幾墩？</h3>
+  <div class="options">
+    <button data-v="4" data-hint="記得要加 6 喔！">4 墩</button>
+    <button data-v="10">10 墩</button>
+    <button data-v="13" data-hint="13 墩是全部，那是 7 階。">13 墩</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<div class="quiz card-box" data-answer="s" data-explain="1♥ 之後，同樣是 1，♠ 比 ♥ 高，所以可以叫 1♠。">
+  <h3>前一個人叫了「1♥」，下面哪一個可以叫？</h3>
+  <div class="options">
+    <button data-v="c" data-hint="♣ 比 ♥ 低，數字一樣不能叫。">1♣</button>
+    <button data-v="s">1♠</button>
+    <button data-v="d" data-hint="♦ 比 ♥ 低，數字一樣不能叫。">1♦</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<nav class="stepnav"></nav>
+</main>
+<footer>橋牌入門小教室・給第一次接觸橋牌的你</footer>
+</body>
+</html>

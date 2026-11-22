@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>打牌：跟牌和墩｜橋牌入門小教室</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body data-step="2">
+<header class="top"><div class="top-inner"><a href="index.html">♠♥ 橋牌入門小教室</a><span class="count"></span></div></header>
+<div class="bar"><span style="width:0"></span></div>
+<main>
+<h1>第 2 步：打牌，跟牌和「墩」</h1>
+<div class="card-box goal"><b>這一步的目標：</b>學會「跟牌」，看得出每一輪誰贏。</div>
+<p class="lead">打牌就像<b>比大小</b>，這是橋牌最核心的部分，先學會它！</p>
+
+<h2>🔄 一輪怎麼打？</h2>
+<ol>
+  <li>一個人先出一張牌，例如 <span class="pc red">♥5</span>。</li>
+  <li>其他三人照<b>順時針</b>輪流出一張牌。</li>
+  <li><b>手上有紅心就一定要出紅心</b>，這叫「<b>跟牌</b>」。</li>
+  <li>四張牌裡，<b>先出的花色中最大的那張</b>贏。</li>
+  <li>這四張牌稱為一「<b>墩</b>」，贏的人收走，再出下一墩的第一張牌。</li>
+</ol>
+<p>13 墩打完，看哪一隊贏的墩數多。</p>
+<div class="card-box tip">沒有先出的花色時，可以隨便丟一張別的花色，但那張牌<b>不會贏</b>（除非它是王牌，下一步會學）。</div>
+
+<h2>🎯 練習：誰贏這一墩？</h2>
+<p>北先出紅心。點一下你覺得贏的那張牌：</p>
+<div class="trick card-box" data-lead="N" data-cards="N:♥5,E:♥K,S:♥2,W:♣A" data-explain="東的 ♥K 是紅心裡最大的。西的 ♣A 雖然是 A，但不是紅心，所以贏不了。" data-hint="提示：只有紅心才能比大小喔！"></div>
+
+<p>再一題，這次換西先出黑桃：</p>
+<div class="trick card-box" data-lead="W" data-cards="W:♠9,N:♠J,E:♦A,S:♠Q" data-explain="南的 ♠Q 是黑桃裡最大的，東的 ♦A 是別的花色，不算。" data-hint="提示：先出的是黑桃，看黑桃誰最大。"></div>
+
+<div class="quiz card-box" data-answer="yes" data-explain="有紅心就必須跟紅心，這是橋牌最重要的規則。">
+  <h3>別人先出紅心，你手上有紅心，可以不出紅心嗎？</h3>
+  <div class="options">
+    <button data-v="no" data-hint="手上有的話，就一定要跟。">可以</button>
+    <button data-v="yes">不行，一定要出紅心</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<nav class="stepnav"></nav>
+</main>
+<footer>橋牌入門小教室・給第一次接觸橋牌的你</footer>
+</body>
+</html>

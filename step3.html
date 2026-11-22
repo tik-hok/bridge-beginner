@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>王牌和將吃｜橋牌入門小教室</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body data-step="3">
+<header class="top"><div class="top-inner"><a href="index.html">♠♥ 橋牌入門小教室</a><span class="count"></span></div></header>
+<div class="bar"><span style="width:0"></span></div>
+<main>
+<h1>第 3 步：王牌和將吃</h1>
+<div class="card-box goal"><b>這一步的目標：</b>知道王牌有多厲害，什麼時候可以「將吃」。</div>
+<p class="lead">每一副牌可以指定一個花色當「<b>王牌</b>」，王牌比其他花色都大！</p>
+
+<h2>👑 規則只有兩句</h2>
+<ol>
+  <li>手上<b>沒有</b>先出的那個花色時，可以出一張王牌，這叫「<b>將吃</b>」。</li>
+  <li>有王牌出現時，<b>最大的王牌贏</b>，其他花色再大都沒用。</li>
+</ol>
+<div class="card-box tip">王牌是 ♠ 的時候，一張小小的 <span class="pc black">♠2</span> 也能贏過 <span class="pc red">♥A</span>！但前提是你手上<b>真的沒有紅心</b>。</div>
+
+<h2>🎯 練習：有王牌時誰贏？</h2>
+<p>王牌是 ♠，北先出紅心，南（你）沒有紅心：</p>
+<div class="trick card-box" data-lead="N" data-trump="♠" data-cards="N:♥A,E:♥K,S:♠2,W:♥3" data-explain="南用 ♠2 將吃！王牌比所有紅心都大。"></div>
+
+<p>如果兩個人都將吃呢？王牌是 ♥，東先出方塊：</p>
+<div class="trick card-box" data-lead="E" data-trump="♥" data-cards="E:♦K,S:♥4,W:♥9,N:♦A" data-explain="南和西都出了王牌，比王牌大小，♥9 比 ♥4 大，所以西贏。" data-hint="提示：兩個人都出王牌時，比王牌的大小。"></div>
+
+<p>沒有人將吃的時候：王牌是 ♣，西先出黑桃：</p>
+<div class="trick card-box" data-lead="W" data-trump="♣" data-cards="W:♠4,N:♠10,E:♠A,S:♠8" data-explain="大家都有黑桃、沒有人出王牌，所以照平常比大小，♠A 贏。"></div>
+
+<div class="quiz card-box" data-answer="no" data-explain="有先出的花色就要跟牌，不能將吃。">
+  <h3>別人出紅心，你手上有紅心也有王牌，可以直接出王牌嗎？</h3>
+  <div class="options">
+    <button data-v="yes" data-hint="記得第 2 步：有的話一定要跟牌。">可以</button>
+    <button data-v="no">不行</button>
+  </div>
+  <div class="feedback"></div>
+</div>
+
+<nav class="stepnav"></nav>
+</main>
+<footer>橋牌入門小教室・給第一次接觸橋牌的你</footer>
+</body>
+</html>

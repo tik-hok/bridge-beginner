@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>數點力：牌有多強｜橋牌入門小教室</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body data-step="6">
+<header class="top"><div class="top-inner"><a href="index.html">♠♥ 橋牌入門小教室</a><span class="count"></span></div></header>
+<div class="bar"><span style="width:0"></span></div>
+<main>
+<h1>第 6 步：數點力，牌有多強？</h1>
+<div class="card-box goal"><b>這一步的目標：</b>學會用點數快速判斷手上的牌強不強。</div>
+
+<h2>✏️ 大牌點數表</h2>
+<table>
+  <tr><th>牌</th><th>點數</th></tr>
+  <tr><td>A</td><td>4 點</td></tr>
+  <tr><td>K</td><td>3 點</td></tr>
+  <tr><td>Q</td><td>2 點</td></tr>
+  <tr><td>J</td><td>1 點</td></tr>
+  <tr><td>10 以下</td><td>0 點</td></tr>
+</table>
+<p>整副牌共 <b>40 點</b>，平均每人 10 點。<b>點數越多，牌越強</b>，大約 <b>12 點以上</b>就可以考慮主動叫牌。</p>
+
+<h2>🎯 練習：數數看這手牌幾點？</h2>
+<div class="card-box" id="points">
+  <div class="hand"></div>
+  <p>
+    <label>我算出來是 <input type="number" min="0" max="37" style="width:5em"> 點</label>
+    <button class="btn primary" id="check" type="button">對答案</button>
+    <button class="btn" id="redeal" type="button">換一手牌 🔄</button>
+  </p>
+  <div class="feedback"></div>
+</div>
+<div class="card-box tip">多練幾手！熟練之後，拿到牌一眼就能算出點數。</div>
+
+<nav class="stepnav"></nav>
+</main>
+<footer>橋牌入門小教室・給第一次接觸橋牌的你</footer>
+</body>
+</html>
